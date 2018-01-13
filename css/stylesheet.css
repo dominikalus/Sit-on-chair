@@ -133,18 +133,33 @@ nav {
      text-align: center;
  }
 
+ .section2 .row{
+  margin: 0 -24px;
+ }
+
  .col {
      width: 33.333%;
+     float: left;
+     padding: 25px 24px;
  }
 
- .img1 {
+ .img1, .img2{
      height: 225px;
-     background-image: url("../images/box1_img.jpg") ;
      padding-top:150px;
+     border: 1px solid rgb(209,211,212);
+     background-size: cover;
  }
 
- .section2text {
-     font-weight: 400;
+ .img1{
+     background-image: url("../images/box1_img.jpg") ;
+ }
+
+ .img2 {
+     background-image: url("../images/box2_img.jpg");
+ }
+
+ .section2text, .rightboxheader {
+     font-weight: 700;
      background-color: rgba(255,255,255, .5);
      line-height: 60px;
      position:relative;
@@ -161,4 +176,48 @@ nav {
      bottom: 15px;
 
  }
+
+ .rightbox {
+     height: 252px;
+     border: 1px solid rgb(209,211,212);
+
+ }
+
+
+
+.rightboxheader::after{
+    content: "";
+    background-color: rgb(35,175,143);
+    width:138px;
+    height: 7px;
+    display:block;
+    position: absolute;
+    bottom:15px;
+
+}
+
+.rightboxtext1, .rightboxtext2 {
+    font-weight: 300;
+    padding-bottom: 30px;
+    padding-left: 14px;
+    padding-right: 30px;
+}
+
+.pricelist {
+    background-color: rgb(236,237,239);
+}
+
+.pricelistheader {
+    text-transform: uppercase;
+    padding-top:48px;
+}
+
+.pricelistheader::after {
+    content:"";
+    background-color: rgb(35,175,143);
+    width:320px;
+    height:7px;
+    display:block;
+
+}
 
