@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    color:white;
+}
+
+.logo {
+    float: left;
+}
+.logo a {
+    height: 10px;
+    width: 99px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px;
+}
+
+span {
+    color: rgb(35,175,143);
+    font-weight: 700;
+}
+
+nav {
+    float: right;
+}
+
+.topmenu a{
+    color: white;
+    text-transform: uppercase;
+}
+
+.topmenu li {
+    float:left;
+    padding: 0 50px;
+    list-style: none;
+    padding-top: 19px;
+    padding-bottom:15px;
+}
+
+.topmenu li:last-child {
+    padding-right: 0;
+}
+
+.clearfix {
+    clear:both;
+}
+
+.topmenu li:hover {
+    font-weight: 700;
+}
+
+.topsection{
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+.topsectiontext {
+    padding: 55px 0;
+    text-align: center;
+}
+
+.arrow {
+    font-size:42px;
+    color: rgb(35,175,143)
+}
+
+.leftarrow {
+    float: left;
+}
+
+.rightarrow {
+    float:right;
+}
+
+.slogan {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+.sectioncontent {
+    float:left;
+    width:950px;
+}
+
+.topsectiontext, .chair {
+    float: left;
+    width:50%;
+}
+ .leftarrow, .rightarrow {
+     margin: 150px 0;
+ }
+
+ .button1 {
+     color:white;
+     text-align: center;
+     font-size: 17px;
+     line-height: 52px;
+     text-transform: uppercase;
+     background-color: rgb(35,175,143);
+     border-radius: 5px;
+     height: 52px;
+     width: 264px;
+     display:block;
+     margin: 36px auto;  /*auto zeby byl na srodku !!!!!!*/
+ }
+
+ .section1text {
+     text-align: center;
+ }
+
+ .col {
+     width: 33.333%;
+ }
+
+ .img1 {
+     height: 225px;
+     background-image: url("../images/box1_img.jpg") ;
+     padding-top:150px;
+ }
+
+ .section2text {
+     font-weight: 400;
+     background-color: rgba(255,255,255, .5);
+     line-height: 60px;
+     position:relative;
+     padding-left: 14px;
+ }
+
+ .section2text::after{
+     content: "";
+     background-color: rgb(35,175,143);
+     width:138px;
+     height: 7px;
+     display:block;
+     position:absolute;
+     bottom: 15px;
+
+ }
+
