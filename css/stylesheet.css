@@ -33,7 +33,7 @@ header {
 .logo {
     float: left;
 }
-.logo a {
+.logo a{
     height: 10px;
     width: 99px;
     text-transform: uppercase;
@@ -225,7 +225,7 @@ p;
     display:block;
 }
 
-.box, .box2{
+.box{
 
     height: 495px;
     border: 2px solid rgb(202,203,205);
@@ -236,16 +236,10 @@ p;
     background-color: rgb(246,247,249);
 }
 
-.box2 {
-    width: 326px;
-    height: 495;
-    padding-top: 30px;
-    text-align: center;
-    position: relative;
-    margin-top:74px;
+.middle {
     background-color: rgb(35,175,143);
+    border: 2px solid rgb(35,175,143);
 }
-
 
 .box .head .circle {
     position: absolute;
@@ -260,6 +254,11 @@ p;
     background-color: white;
 }
 
+.middlecircle {
+    background-color: rgb(35,175,143);
+    border: 2px solid rgb(35,175,143);
+
+}
 
 
 .box .head .circle .circle-inside{
@@ -280,6 +279,12 @@ h2 {
     font-weight: 300;
     margin-top:12px;
 }
+
+.middleh2 {
+    color:white;
+}
+
+
 /*
 .box2h2 {
     color: white;
@@ -349,6 +354,11 @@ h2 {
     margin: 19px auto;
 
 }
+
+.middlebutton {
+    background-color: white;
+    color: rgb(35,175,143);
+}
 /*
 .boxbutton2 {
     color:rgb(35,175,143);
@@ -371,5 +381,46 @@ h2 {
     width:320px;
     height:7px;
     display:block;
+}
+
+.form {
+    width:70%;
+}
+
+
+.rightform {
+    width:30%;
+   float:right;
+}
+
+.rightform .agree{
+    color: rgb(146,147,148);
+    font-size: 15px;
+
+}
+
+.checkbox [type="checkbox"] {
+    display:none;
+    visibility: hidden;
+}
+
+.checkbox [type="checkbox"]:checked + .formok{
+    border: 1px solid rgb(35,175,143);
+}
+
+.logos {
+    float:right;
+}
+
+.bottomlogo {
+    float: right;
+}
+
+.bottombutton {
+    width:343px;
+    height:70px;
+    line-height:70px;
+    font-size: 24px;
+
 }
 
