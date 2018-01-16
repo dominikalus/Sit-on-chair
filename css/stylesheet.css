@@ -15,6 +15,12 @@ body {
     margin: 0 auto;
 }
 
+.container:after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
 a{
     text-decoration: none;
 }
@@ -61,9 +67,6 @@ nav {
     padding-right: 0;
 }
 
-.clearfix {
-    clear:both;
-}
 
 .topmenu li:hover {
     font-weight: 700;
@@ -182,7 +185,7 @@ nav {
      border: 1px solid rgb(209,211,212);
 
  }
-
+p;
 
 
 .rightboxheader::after{
@@ -205,10 +208,12 @@ nav {
 
 .pricelist {
     background-color: rgb(236,237,239);
+    height: 730px;
 }
 
-.pricelistheader {
+.pricelistheader, .contactheader {
     text-transform: uppercase;
+    font-size: 16px;
     padding-top:48px;
 }
 
@@ -218,6 +223,153 @@ nav {
     width:320px;
     height:7px;
     display:block;
+}
 
+.box, .box2{
+
+    height: 495px;
+    border: 2px solid rgb(202,203,205);
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    margin-top:74px;
+    background-color: rgb(246,247,249);
+}
+
+.box2 {
+    width: 326px;
+    height: 495;
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    margin-top:74px;
+    background-color: rgb(35,175,143);
+}
+
+
+.box .head .circle {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(202,203,205);
+    border-radius: 50%;
+    top: -30px;
+    left: 50%;
+    margin-left: -30px;
+    background-color: white;
+}
+
+
+
+.box .head .circle .circle-inside{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(180,181,182);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: block;
+
+}
+
+h2 {
+    color: rgb(35,175,143);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top:12px;
+}
+/*
+.box2h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top:12px;
+}
+*/
+.pricecircle {
+    width:125px;
+    height:125px;
+    border: 2px solid rgb(202,203,205);
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    margin :30px 90px;
+
+}
+
+.circletext1{
+    font-size: 32px;
+    color: rgb(180,181,182);
+    text-align: center;
+    font-weight: 700;
+    margin-top:30px;
+
+}
+
+.circletext2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(180,181,182);
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.boxline1, .boxline2{
+    width:100%;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.boxline1 {
+    background-color: rgb(220,221,223);
+    color:darkgray;
+}
+
+.boxline2{
+    background-color: rgb(236,237,239);
+    color: rgb(130,131,132);
+}
+
+
+.boxbutton {
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 34px;
+    text-transform: uppercase;
+    background-color: rgb(35,175,143);
+    border-radius: 5px;
+    height: 34px;
+    width: 122px;
+    display:block;
+    margin: 19px auto;
+
+}
+/*
+.boxbutton2 {
+    color:rgb(35,175,143);
+    text-align: center;
+    font-size: 12px;
+    line-height: 34px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 5px;
+    height: 34px;
+    width: 122px;
+    display:block;
+    margin: 19px auto;
+
+}*/
+
+.contactheader::after {
+    content:"";
+    background-color: rgb(35,175,143);
+    width:320px;
+    height:7px;
+    display:block;
 }
 
