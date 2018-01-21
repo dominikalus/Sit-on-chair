@@ -9,7 +9,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#">Sit <span>On</span> Chair</a>
+                <a href="#">Sit <span class="topspan">On</span> Chair</a>
             </div>
         <nav>
             <ul class="topmenu">
@@ -112,7 +112,7 @@
                                 <div class="boxline1">Zakup towaru + dowóz</div>
                                 <div class="boxline2">Serwis</div>
 
-                                <a class="boxbutton" href="#">dołącz</a>
+                                <a class="boxbutton btn1" href="#">dołącz</a>
                             </div>
                         </div>
                 </div>
@@ -121,9 +121,9 @@
             <div class="col">
                 <div class="box middle">
                     <div class="head">
-                                <span class="circle middlecircle">
-                                    <span class="circle-inside"></span>
-                                </span>
+                        <span class="circle middle">
+                            <span class="circle-inside"></span>
+                        </span>
                     </div>
 
                     <div class="content">
@@ -142,7 +142,7 @@
                         <div class="boxline2">Serwis</div>
                         <div class="boxline1">Gwarancja 5 lat</div>
 
-                        <a class="boxbutton middlebutton" href="#">dołącz</a>
+                        <a class="boxbutton btn2" href="#">dołącz</a>
                     </div>
                 </div>
             </div>
@@ -187,34 +187,33 @@
         <div class="container">
             <p class="contactheader">kontakt</p>
 
-            <div class="form">
+            <div class="leftform">
                 <form>
                     <label for="name">
                     <input type="text" id="name" placeholder="Imię">
                     </label>
                     <br>
-
                     <label for="email">
                         <input type="text" id="email" placeholder="email">
                     </label>
                     <br>
                     <label for="message">
-                        <input type="text" id="message" placeholder="Wiadomość">
+                        <textarea id="message" rows="50" cols="30" placeholder=" Wiadomość"></textarea>
                     </label>
 
                 </form>
             </div>
 
             <div class="rightform">
-               <img class="redchair" src="images/red_chair.png"/>
-
+                <div class="imagediv">
+                    <img class="redchair" src="images/red_chair.png"/>
+                </div>
                 <label class="checkbox">
-
                     <input type="checkbox"/>
                     <img class="formok" src="images/form_ok.jpg"/>
                 </label>
                 <p class="agree">
-                    Zgadzam się na przetwarzanie danych osobowych
+                    Zgadzam się na przetwarzanie <br>danych osobowych
                 </p>
                 <a class="boxbutton bottombutton" href="#">wyślij</a>
             </div>
@@ -224,21 +223,22 @@
     <footer>
         <div class="container">
 
-            <p class="footertext">
-                Copyright 2014 | All Rights Reserved. - Sit On Chair
-            </p>
-
-            <div class="logos">
-                <img src="images/flickr.png"/>
-                <img src="images/vimeo.png"/>
-                <img src="images/pinterest.png"/>
-                <img src="images/twitter.png"/>
-                <a href="#" class="bottomlogo">Sit <span class="bottomlogospan">On</span> Chair</a>
+            <div class="rights">
+                <span class="copyright">Copyright 2014|All Rights Reserved.- Sit On Chair</span>
             </div>
+            <div class="cont">
+                <div class="socials">
+                    <p><a href="http://www.flickr.com"></a></p>
+                    <p><a href="http://vimeo.com"></a></p>
+                    <p><a href="http://pl.pinterest.com"></a></p>
+                    <p><a href="http://www.twitter.com"></a></p>
+                </div>
 
-
+                <div class="bottomlogo">
+                    <p>SIT <b>ON</b> CHAIR</p>
+                </div>
+            </div>
         </div>
-
     </footer>
 </body>
 </html>
