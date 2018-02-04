@@ -13,7 +13,16 @@
         </div>
         <nav>
             <ul class="topmenu">
-                <li><a href="#">O firmie</a></li>
+                <li>O firmie
+                    <div class="submenu-wrapper">
+                        <div class="arrow-up"></div>
+                        <ul class="submenu">
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Nasz team</a></li>
+                            <li><a href="#">Historia</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
@@ -27,8 +36,16 @@
             <a class="arrow" href="#"><</a>
         </div>
         <div class="sectioncontent">
-            <div class="chair">
-                <img src="images/black_chair.png"/>
+            <div class="slider">
+                <div class="chair visible">
+                    <img src="images/black_chair.png"/>
+                </div>
+                <div class="chair">
+                    <img src="images/orange_chair.png"/>
+                </div>
+                <div class="chair">
+                    <img src="images/red_chair.png"/>
+                </div>
             </div>
             <div class="topsectiontext">
                 <p class="slogan">
@@ -53,12 +70,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="img1">
+                <div class="images img1">
                     <div class="section2text">Chair CLAIR</div>
                 </div>
             </div>
             <div class="col">
-                <div class="img2">
+                <div class="images img2">
                     <div class="section2text">Chair MARGARITA</div>
                 </div>
             </div>
@@ -70,7 +87,7 @@
                     <p class="rightboxtext1">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem debitis, fugit
                         repellendus reprehenderit ullam voluptate. Animi consequuntur laborum nemo!
-                    </p class="rightboxtext1">
+                    </p>
                     <p class="rightboxtext2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, odit?
                     </p>
@@ -119,7 +136,7 @@
         <div class="col">
             <div class="box middle">
                 <div class="head">
-                        <span class="circle middle">
+                        <span class="circle middle-circle">
                             <span class="circle-inside"></span>
                         </span>
                 </div>
@@ -241,5 +258,7 @@
         </div>
     </div>
 </footer>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>

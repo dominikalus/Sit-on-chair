@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-.container:after {
+.container:after  {
     content: "";
     display: block;
     clear: both;
@@ -51,17 +51,48 @@ nav {
     float: right;
 }
 
-.topmenu a {
+.topmenu > li > a {
     color: white;
     text-transform: uppercase;
 }
 
-.topmenu li {
+.topmenu > li {
     float: left;
-    padding: 0 50px;
     list-style: none;
-    padding-top: 19px;
-    padding-bottom: 15px;
+    padding: 19px 50px 15px;
+    position:relative;
+    text-transform: uppercase;
+}
+
+nav .submenu-wrapper {
+    position: absolute;
+    bottom: -100px;
+    display: none;
+    padding-top: 20px;
+}
+
+nav .submenu > li {
+    font-weight: normal;
+    display: block;
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    text-transform: none;
+    padding: 5px;
+}
+
+nav .submenu > li > a{
+    color: white;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid black;
+    margin: 0 auto;
 }
 
 .topmenu li:last-child {
@@ -110,9 +141,20 @@ nav {
     width: 950px;
 }
 
-.topsectiontext, .chair {
+.topsectiontext, .slider {
     float: left;
     width: 50%;
+}
+
+.slider .chair  img{
+    width: 100%;
+}
+
+.slider .chair{
+    display: none;
+}
+.slider .chair.visible{
+    display: block;
 }
 
 .leftarrow, .rightarrow {
@@ -266,6 +308,14 @@ nav {
 
 }
 
+.box .head .middle-circle {
+    background-color: rgb(35, 175, 143);
+    border: 2px solid rgb(35, 175, 143);
+}
+.box .head .middle-circle .circle-inside{
+    background-color: white;
+}
+
 h2 {
     color: rgb(35, 175, 143);
     text-transform: uppercase;
@@ -277,14 +327,7 @@ h2 {
     color: white;
 }
 
-/*
-.box2h2 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-top:12px;
-}
-*/
+
 .pricecircle {
     width: 125px;
     height: 125px;
